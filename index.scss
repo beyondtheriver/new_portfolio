@@ -1,0 +1,102 @@
+// @keyframes show_news {
+//     from {opacity: 0;}
+//     to {opacity: 100;}
+// }
+body{
+  margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 300;
+  // background-color: yellowgreen;
+}
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+header{
+  height: 100%;
+  background-image: url("thefog.jpg");
+  background-size: cover;
+}
+header img{
+  width: 100%;
+}
+#created_by{
+  // background-color: yellowgreen;
+  text-align: center;
+  opacity: 0;
+  margin-top: -16%;
+  font-size: 3rem;
+}
+#news_and_projects{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100%;
+  padding-top: 4%;
+}
+#news_and_projects:hover{
+  cursor: pointer;
+}
+#news_and_projects a{
+  color: white;
+}
+#news{
+  background-image: url("water.jpg");
+  background-size: 16rem;
+  background-position: center;
+  height: 12rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100%;
+  border-radius: 100%;
+}
+#hidden_news{
+  display: none;
+  padding-left: 4rem;
+  opacity: 0%;
+}
+#projects{
+  background-image: url("lighthouse.jpg");
+  background-size: 16rem;
+  background-position: center;
+  height: 12rem;
+  width: 12rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 100%;
+  border-radius: 100%;
+}
+#contact_wrapper{
+  padding-top: 40px;
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+#contact_wrapper h2{
+  text-align: center;
+}
+#icon_place{
+  display: flex;
+  justify-content: space-between;
+}
+#icons{
+  width: 80px;
+  height: 80px;
+}
+.phone_number{
+  background-image: url("icon_phone.svg");
+  color: transparent;
+}
+.phone_number:hover{
+  background-image: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone_number_text{
+  display: none;
+}
