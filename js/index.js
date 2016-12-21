@@ -30,6 +30,10 @@ function radiiSwitch(){
   });
 }
 
+function showNews(){
+  $("#hidden_news").animate({'opacity':'100%'}, 3000);
+};
+
 function openBox(){
   $("#news").click(function(){
     $( this ).css({
@@ -45,6 +49,4 @@ function openBox(){
   setTimeout(showNews(), 1100);
 }
 
-function showNews(){
-  $("#hidden_news").animate({'opacity':'100%'}, 3000);
-};
+

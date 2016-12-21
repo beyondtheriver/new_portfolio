@@ -14,7 +14,7 @@ a{
 }
 header{
   height: 100%;
-  background-image: url("thefog.jpg");
+  background-image: url("img/thefog.jpg");
   background-size: cover;
 }
 header img{
@@ -41,7 +41,7 @@ header img{
   color: white;
 }
 #news{
-  background-image: url("water.jpg");
+  background-image: url("img/water.jpg");
   background-size: 16rem;
   background-position: center;
   height: 12rem;
@@ -58,7 +58,7 @@ header img{
   opacity: 0%;
 }
 #projects{
-  background-image: url("lighthouse.jpg");
+  background-image: url("img/lighthouse.jpg");
   background-size: 16rem;
   background-position: center;
   height: 12rem;
@@ -87,7 +87,7 @@ header img{
   height: 80px;
 }
 .phone_number{
-  background-image: url("icon_phone.svg");
+  background-image: url("img/icon_phone.svg");
   color: transparent;
 }
 .phone_number:hover{
