@@ -23,7 +23,7 @@ function scroller(){
 
 function radiiSwitch(){
   $(".circle_square").mouseenter(function(){
-    $( this ).animate({'border-radius': 0}, 500);
+    $( this ).css('border-radius', 0 );
   }).mouseleave(function(){
     $( this ).animate({'border-radius': 100}, 500);
   });
@@ -35,14 +35,17 @@ function showNews(){
 
 function openBox(){
   $("#news").click(function(){
+    $( this ).animate({}, 1000);
     $( this ).css({
-      'border-radius': 0,
+      'border-radius': 2,
       'display': 'block',
       'background-image': 'none',
-      'background-color': 'white',
-      'height': 'auto'
+      'background-color': 'lightgray',
+      'width': '75%',
+      'height': 'auto',
     });
-    $( this ).animate({'width': '75%'}, 1000);
+    $("#news a").css('color', 'black');
+    $("#news h1").css('text-align', 'center');
     $("#hidden_news").css('display', 'block');
   });
   setTimeout(showNews(), 1100);
