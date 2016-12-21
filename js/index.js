@@ -37,16 +37,20 @@ function openBox(){
   $("#news").click(function(){
     $( this ).animate({}, 1000);
     $( this ).css({
-      'border-radius': 2,
+      'border-radius': 0,
       'display': 'block',
       'background-image': 'none',
       'background-color': 'lightgray',
       'width': '75%',
       'height': 'auto',
     });
-    $("#news a").css('color', 'black');
+    $("#news a").css({
+      'color': '#4B6A88',
+      'font-style': 'bold'
+    });
     $("#news h1").css('text-align', 'center');
     $("#hidden_news").css('display', 'block');
+    $(".close").css('display', 'block');
   });
   setTimeout(showNews(), 1100);
 }
