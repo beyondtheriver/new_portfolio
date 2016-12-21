@@ -6,7 +6,6 @@ body{
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
-  // background-color: yellowgreen;
 }
 a{
   text-decoration: none;
@@ -14,18 +13,21 @@ a{
 }
 header{
   height: 100%;
-  background-image: url("img/thefog.jpg");
+  background-image: url("../img/thefog.jpg");
   background-size: cover;
+  position: relative;
 }
 header img{
   width: 100%;
 }
 #created_by{
-  // background-color: yellowgreen;
+  position: absolute;
   text-align: center;
   opacity: 0;
-  margin-top: -16%;
-  font-size: 3rem;
+  font-size: 5rem;
+  margin: 0px 0 0 29%;
+  bottom: 1%;
+  z-index: 999;
 }
 #news_and_projects{
   text-decoration: none;
@@ -34,14 +36,11 @@ header img{
   margin-top: 100%;
   padding-top: 4%;
 }
-#news_and_projects:hover{
-  cursor: pointer;
-}
 #news_and_projects a{
   color: white;
 }
 #news{
-  background-image: url("img/water.jpg");
+  background-image: url("../img/water.jpg");
   background-size: 16rem;
   background-position: center;
   height: 12rem;
@@ -52,13 +51,16 @@ header img{
   margin-left: 100%;
   border-radius: 100%;
 }
+#news:hover{
+  cursor: pointer;
+}
 #hidden_news{
   display: none;
   padding-left: 4rem;
   opacity: 0%;
 }
 #projects{
-  background-image: url("img/lighthouse.jpg");
+  background-image: url("../img/lighthouse.jpg");
   background-size: 16rem;
   background-position: center;
   height: 12rem;
@@ -68,6 +70,9 @@ header img{
   align-items: center;
   margin-right: 100%;
   border-radius: 100%;
+}
+#projects:hover{
+  cursor: pointer;
 }
 #contact_wrapper{
   padding-top: 40px;
@@ -87,7 +92,7 @@ header img{
   height: 80px;
 }
 .phone_number{
-  background-image: url("img/icon_phone.svg");
+  background-image: url("../img/icon_phone.svg");
   color: transparent;
 }
 .phone_number:hover{

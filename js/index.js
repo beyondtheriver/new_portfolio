@@ -12,7 +12,6 @@ function scroller(){
     var j = $(window).scrollTop();
     $("header img").css('transform', 'translateY(' + (-j*1.1) + 'px)');
     $("#created_by").css('opacity', j/375);
-    $("#created_by").animate({'font-size':'5rem'}, 3000)
     console.log(j);
     if(j=568){
       $("#news_and_projects").animate({'margin-top': 0}, 1000);
