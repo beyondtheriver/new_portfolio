@@ -13,13 +13,13 @@
       <h1 id="created_by">zachary uzupis</h1>
     </header>
 
-    <section id="news_and_projects">
+    <section class="news_and_projects">
 
-      <div id="news" class="circle_square">
-        <div id="box">
+      <div id="news" class="news" class="circle_square">
+        <div class="box">
           <h1>news</h1>
         </div>
-        <div id="hidden_news">
+        <div class="hidden_news">
           <ul>
             <li>Zak's first AngularJS project is now live <a href="angularjs/app/index.html">here!</a>- November 23, 2016</li>
             <li>New Java projects added to Zachary's github page! <a href="https://github.com/beyondtheriver/java101">Check them out!</a> - November 3, 2016</li>
@@ -27,20 +27,62 @@
             <li>A new <a href="">email development</a> has been added to projects! - October 9, 2016</li>
             <li>New version of the PHIT Comedy Corporate Workshop site on a new <a href="http://www.phitcorporate.com">domain!</a> - September 28, 2016</li>
           </ul>
-        </div>
-        <div class="close">
-          <p>close news<p>
+
         </div>
 
       </div>
+      <div class="close">
+        <p>close news<p>
+      </div>
 
-      <div id="projects" class="circle_square">
+      <div class="projects" class="circle_square">
         <h1>projects</h1>
-        <!-- Modal for Projects -->
-        <div class="modal">
-          <div class="modal-content">
+      </div>
+
+<!-- Modal for Projects -->
+      <div class="modal">
+        <div class="modal-content">
+
+          <div id="project_preview">
+
+            <figure id="angulartodo">
+              <a href="angularjs/app/index.html"><img class="hvr-grow-shadow" src="img/angulartodo.png"></a>
+              <figcaption>
+                 <h2>AngularJS To Do List</h2>
+                 Zak's first <strong>AngularJS</strong> project - a To Do List that allows a user to create, edit, and delete a list and a task within that list.
+              </figcaption>
+            </figure>
+            <hr>
+
+            <figure id="msjahani">
+              <a href="http://www.msjahani.com"><img class="hvr-grow-shadow" src="img/msjahani.jpg"></a>
+              <figcaption>
+                <h2>Ms. Jahani.com</h2>
+                A custom <strong>Wordpress</strong> project to help a teacher communicate more effectively with her students and their parents.
+              </figcaption>
+            </figure>
+            <hr>
+
+            <figure id="armfeat">
+              <a href="https://armfeat.herokuapp.com/" ><img class="hvr-grow-shadow" src="img/armfeat.jpg"></a>
+              <figcaption>
+                <h2>Arm Feat: Type Champion</h2>
+                A <strong>Ruby on Rails</strong> web app that merges the challenge of a typing speed tester with the fun of an arm wrestle.
+              </figcaption>
+            </figure>
+            <hr>
+
+            <figure id="whats4dinner">
+              <a href="http://104.236.126.232/"><img class="hvr-grow-shadow" src="img/whats4dinner.jpg"></a>
+              <figcaption>
+                <h2>Whats 4 Dinner?</h2>
+                A <strong>Ruby on Rails</strong> web app that takes the ingredients you have in your kitchen and uses the <strong>Spoonacular API</strong> to return recipes that include those ingredients.
+              </figcaption>
+            </figure>
+            <hr>
 
           </div>
+
         </div>
       </div>
 

@@ -1,11 +1,17 @@
 $(document).ready(function(){
-  //opens box
-  openBox();
-  //animates border radii
-  radiiSwitch();
   //controls the parallax and opacity animations
   scroller();
+  //opens news box
+  openBox();
+  //closes news box
+  closeBox();
+  //opens project box
+  openProjects();
+  //closes project box
+  closeProjects();
 });
+
+
 
 function scroller(){
   $(window).scroll(function() {
@@ -14,45 +20,44 @@ function scroller(){
     $("#created_by").css('opacity', j/375);
     console.log(j);
     if(j=568){
-      $("#news_and_projects").animate({'margin-top': 0}, 1000);
-      $("#news").animate({'margin-left': 0}, 1000);
-      $("#projects").animate({'margin-right': 0}, 1000);
-    }
+      $(".news_and_projects").animate({'margin-top': 0}, 1000);
+      $(".news").animate({'margin-left': 0}, 1000);
+      $(".projects").animate({'margin-right': 0}, 1000);
+    };
   });
-}
-
-function radiiSwitch(){
-  $(".circle_square").mouseenter(function(){
-    $( this ).css('border-radius', 0 );
-  }).mouseleave(function(){
-    $( this ).animate({'border-radius': 100}, 500);
-  });
-}
-
-function showNews(){
-  $("#hidden_news").animate({'opacity':'100%'}, 3000);
 };
 
 function openBox(){
-  $("#news").click(function(){
-    $( this ).animate({}, 1000);
-    $( this ).css({
-      'border-radius': 0,
-      'display': 'block',
-      'background-image': 'none',
-      'background-color': 'lightgray',
-      'width': '75%',
-      'height': 'auto',
+  var newsDisplay = $(".hidden_news").css('display');
+  // if (newsDisplay == 'none'){
+    $("#news").click(function(){
+      $(this).removeClass("news").addClass("news_open");
+      //previously hidden news now displayed
+      $(".hidden_news").show();
+      //close button appears
+      $(".close").show();
     });
-    $("#news a").css({
-      'color': '#4B6A88',
-      'font-style': 'bold'
+  // };
+};
+
+function closeBox(){
+    $(".close").click(function(){
+      $("#news").removeClass("news_open").addClass("news");
+      //hidden news again hidden
+      $(".hidden_news").hide();
+      //close button disappears
+      $(".close").hide();
     });
-    $("#news h1").css('text-align', 'center');
-    $("#hidden_news").css('display', 'block');
-    $(".close").css('display', 'block');
+};
+
+function openProjects(){
+  $(".projects").click(function(){
+    $(".modal").show();
   });
-  setTimeout(showNews(), 1100);
-}
+};
 
-
+function closeProjects(){
+  $(".modal").click(function(){
+    $(this).hide();
+  })
+};

@@ -17,8 +17,7 @@ header img{
   width: 100%;
 }
 
-// my name, which should serve as a
-// logo/banner for the top of the site
+
 #created_by{
   position: absolute;
   text-align: center;
@@ -26,19 +25,23 @@ header img{
   font-size: 5rem;
   margin: 0px 0 0 29%;
   bottom: 1%;
-  z-index: 999;
+  z-index: 1;
 }
-#news_and_projects{
+
+
+.news_and_projects{
   text-decoration: none;
   display: flex;
   justify-content: space-around;
   margin-top: 100%;
   padding-top: 4%;
 }
-#news_and_projects a{
+.news_and_projects a{
   color: white;
 }
-#news{
+
+
+.news{
   background-image: url("../img/water.jpg");
   background-size: 16rem;
   background-position: center;
@@ -48,26 +51,38 @@ header img{
   justify-content: center;
   align-items: center;
   margin-left: 100%;
-  border-radius: 100%;
 }
-#news:hover{
+.news:hover{
   cursor: pointer;
   color: white;
 }
-#news_open{
+
+
+.news_open{
   border-radius: 0;
   display: block;
-  background-image: none;
-  background-color: lightgray;
   width: 75%;
   height: auto;
+  background-image: none;
+  background-color: lightgray;
 }
-#hidden_news{
+.news_open a{
+  color: #4B6A88;
+}
+.news_open a:hover{
+  color: black;
+}
+.news_open h1{
+  text-align: center;
+}
+
+.hidden_news{
   display: none;
   padding-left: 4rem;
   opacity: 0%;
 }
-#projects{
+
+.projects{
   background-image: url("../img/lighthouse.jpg");
   background-size: 16rem;
   background-position: center;
@@ -77,12 +92,13 @@ header img{
   justify-content: center;
   align-items: center;
   margin-right: 100%;
-  border-radius: 100%;
 }
-#projects:hover{
+.projects:hover{
   cursor: pointer;
   color: white;
 }
+
+
 #contact_wrapper{
   padding-top: 40px;
   width: 75%;
@@ -92,6 +108,8 @@ header img{
 #contact_wrapper h2{
   text-align: center;
 }
+
+
 #icon_place{
   display: flex;
   justify-content: space-between;
@@ -119,36 +137,52 @@ header img{
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
+  z-index: 2; /* Sit on top */
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
+  width: 90%; /* Full width */
+  height: 90%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgb(154,205,50);
 }
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #fefefe;
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  color: black;
+}
+
+// Project Contents (Images and Descriptions)
+#project_preview{
+  // margin: 0% auto;
+  // display: flex;
+  // justify-content; center;
+
+}
+#project_preview img{
+  // vertical-align: center;
+  width: 100%;
+  }
+figcaption{
+  // align-items: center;
+  text-align: center;
 }
 
 /* The Close Button */
 .close {
   display: none;
+  position: absolute;
+  right: 25%;
   color: #aaa;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
 }
 
-.close:hover,
-.close:focus {
+.close p:hover,
+.close p:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
