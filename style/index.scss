@@ -36,7 +36,7 @@ header img{
 
 
 .about{
-  height: 30%;
+  height: 20%;
   background-color: #D2D7D3;
   position: relative;
   text-align: center;
@@ -48,95 +48,49 @@ header img{
   width: 100%;
 }
 .about p{
-  font-size: 2rem;
+  font-size: 2.1rem;
   color: white;
   text-shadow: 0.1rem 0.1rem #FF6347;
 }
 
+
 #news_list{
   height: 35%;
-}
-.news_item{
-  display: none;
-  position: absolute;
-}
-
-.news_and_projects{
-  text-decoration: none;
   display: flex;
-  justify-content: space-around;
-  margin-top: 100%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  background-image: url("../img/springtime.jpg");
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/rustywall.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
-.news_and_projects a{
-  color: white;
-}
-
-
-.news{
-  background-image: url("../img/water.jpg");
-  background-size: 16rem;
-  background-position: center;
-  height: 12rem;
-  width: 12rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100%;
-  color: #0000B5;
-}
-.news:hover{
-  cursor: pointer;
-  color: white;
-}
-
-
-.news_open{
-  border-radius: 0;
-  display: block;
-  width: 75%;
-  height: auto;
-  background-image: none;
-  background-color: lightgray;
-}
-.news_open a{
-  color: #4B6A88;
-}
-.news_open a:hover{
-  color: black;
-}
-.news_open h1{
-  text-align: center;
-}
-
-.hidden_news{
+.newsitem{
   display: none;
-  padding-left: 4rem;
-  opacity: 0%;
+  position: absolute;
+  background-color: rgba(0,0,0,.5);
+  padding: 1%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  color: white;
 }
+
 
 .projects{
-  background-image: url("../img/lighthouse.jpg");
-  background-size: 16rem;
+  background-image: url("../img/pnb.jpg");
+  background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 12rem;
-  width: 12rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-right: 100%;
   color: #0000B5;
 }
 .projects:hover{
   cursor: pointer;
-  color: white;
+  color: #F1F227;
 }
 
 
@@ -146,8 +100,9 @@ header img{
   margin: auto;
   text-align: center;
 }
-#contact_wrapper h2{
+#contact_wrapper h1{
   text-align: center;
+  color: white;
 }
 
 
@@ -255,3 +210,41 @@ figcaption{
   transform: scale(1.3);
 }
 
+/* Buzz */
+@-webkit-keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.hvr-buzz {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active {
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
