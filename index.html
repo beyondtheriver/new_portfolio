@@ -8,17 +8,58 @@
 <body>
   <div id="container">
 
+
     <header>
-      <img src="img/beyondtheriver_logo.png"></img>
+      <img src="img/beyondtheriver_logo_0000B5.png"></img>
       <h1 id="created_by">zachary uzupis</h1>
     </header>
 
+
+    <section>
+
+      <div class="about">
+        <p>u·ž·upis |
+        <em>adjective</em> |
+        (origin:lithuania) |
+        (translation:beyond the river)</p>
+      </div>
+
+    </section>
+
+
+    <section>
+
+      <div id="news_list">
+
+          <div class="news_item">
+            <p>Zak's first AngularJS project is now live <a href="angularjs/app/index.html">here!</a>- November 23, 2016</p>
+          </div>
+          <div class="news_item">
+            <p>New Java projects added to Zachary's github page! <a href="https://github.com/beyondtheriver/java101">Check them out!</a> - November 3, 2016</p>
+          </div>
+          <div class="news_item">
+            <p>Zachary was just hired as an independent contractor for a prominent marketing group! See his <a href="zachary_uzupis_resume.pdf" target="_blank">resume</a> for details! - October 27, 2016</p>
+          </div>
+          <div class="news_item">
+            <p>A new <a href="">email development</a> has been added to projects! - October 9, 2016</p>
+          </div>
+          <div class="news_item">
+            <p>New version of the PHIT Comedy Corporate Workshop site on a new <a href="http://www.phitcorporate.com">domain!</a> - September 28, 2016</p>
+          </div>
+
+      </div>
+
+    </section>
+
+
     <section class="news_and_projects">
 
-      <div id="news" class="news" class="circle_square">
+      <div id="news" class="news hvr-grow">
         <div class="box">
           <h1>news</h1>
         </div>
+
+
         <div class="hidden_news">
           <ul>
             <li>Zak's first AngularJS project is now live <a href="angularjs/app/index.html">here!</a>- November 23, 2016</li>
@@ -35,12 +76,13 @@
         <p>close news<p>
       </div>
 
-      <div class="projects" class="circle_square">
+      <div class="projects hvr-grow">
         <h1>projects</h1>
       </div>
 
 <!-- Modal for Projects -->
       <div class="modal">
+          <h1>PROJECTS</h1>
         <div class="modal-content">
 
           <div id="project_preview">
@@ -88,21 +130,23 @@
 
     </section>
 
+
     <section id="contact_wrapper">
 
       <h1>Contact Zak</h1>
 
       <div id="icon_place">
-        <a href="mailto:zuzupis@gmail.com?subject=Web Development"><img id="icons" class="hvr-buzz" src="img/icon_email.svg"></a>
+        <a href="mailto:zuzupis@gmail.com?subject=Web Development"><img id="icons" class="hvr-buzz" src="img/icon_email.png"></a>
         <div id="icons" class="phone_number">215-208-0140</div>
-        <a href="https://www.linkedin.com/in/zacharyuzupis"><img id="icons" class="hvr-buzz" src="img/icon_linkedin.svg"></a>
-        <a href="https://github.com/beyondtheriver"><img id="icons" class="hvr-buzz" src="img/icon_github.svg"></a>
+        <a href="https://www.linkedin.com/in/zacharyuzupis"><img id="icons" class="hvr-buzz" src="img/icon_linkedin.png"></a>
+        <a href="https://github.com/beyondtheriver"><img id="icons" class="hvr-buzz" src="img/icon_github.png"></a>
         <a href="http://www.codewars.com/users/beyondtheriver"><img id="icons" class="hvr-buzz" src="img/icon_codewars.png"></a>
       </div>
       <!-- Zak's Resume -->
-      <h3><a href="zachary_uzupis_resume.pdf" target="_blank">click here to download zak's resume</a></h3>
+      <h3 class="resume"><a href="zachary_uzupis_resume.pdf" target="_blank">click here to download zak's resume</a></h3>
 
     </section>
+
 
   </div>
 
@@ -111,5 +155,6 @@
   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
   crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
+  <script src="js/news_scroll.js"></script>
 </body>
 </html>

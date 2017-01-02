@@ -1,6 +1,8 @@
 $(document).ready(function(){
   //controls the parallax and opacity animations
   scroller();
+  //reveals story on.hover() .created_by
+  storyReveal();
   //opens news box
   openBox();
   //closes news box
@@ -11,7 +13,19 @@ $(document).ready(function(){
   closeProjects();
 });
 
-
+function storyReveal(){
+  var opacity_level = $("#created_by").css('opacity');
+  console.log(opacity_level);
+  $("#created_by").hover(function(){
+    if(opacity_level > 0 && opacity_level < 100){
+      $(this).animate({'opacity': 0}, 1000);
+    }
+  }, function(){
+    if(opacity_level > 0 && opacity_level < 100){
+      $(this).animate({'opacity': 100}, 1000);
+    }
+  });
+};
 
 function scroller(){
   $(window).scroll(function() {

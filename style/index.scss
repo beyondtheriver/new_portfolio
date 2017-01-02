@@ -2,6 +2,7 @@ body{
   margin: 0;
   font-family: 'Fira Sans', sans-serif;
   font-weight: 300;
+  background-color: #9ACD32;
 }
 a{
   text-decoration: none;
@@ -9,7 +10,10 @@ a{
 }
 header{
   height: 100%;
-  background-image: url("../img/thefog.jpg");
+  background-image: url("../img/verdant.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -21,20 +25,55 @@ header img{
 #created_by{
   position: absolute;
   text-align: center;
-  opacity: 0;
-  font-size: 5rem;
   margin: 0px 0 0 29%;
   bottom: 1%;
   z-index: 1;
+  opacity: 0;
+  font-size: 5rem;
+  font-weight: 100;
+  color: #0000B5;
 }
 
+
+.about{
+  height: 30%;
+  background-color: #D2D7D3;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about img{
+  width: 100%;
+}
+.about p{
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0.1rem 0.1rem #FF6347;
+}
+
+#news_list{
+  height: 35%;
+}
+.news_item{
+  display: none;
+  position: absolute;
+}
 
 .news_and_projects{
   text-decoration: none;
   display: flex;
   justify-content: space-around;
   margin-top: 100%;
-  padding-top: 4%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background-image: url("../img/springtime.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 .news_and_projects a{
   color: white;
@@ -51,6 +90,7 @@ header img{
   justify-content: center;
   align-items: center;
   margin-left: 100%;
+  color: #0000B5;
 }
 .news:hover{
   cursor: pointer;
@@ -92,6 +132,7 @@ header img{
   justify-content: center;
   align-items: center;
   margin-right: 100%;
+  color: #0000B5;
 }
 .projects:hover{
   cursor: pointer;
@@ -119,7 +160,8 @@ header img{
   height: 80px;
 }
 .phone_number{
-  background-image: url("../img/icon_phone.svg");
+  background-image: url("../img/icon_phone.png");
+  background-size: 80px 80px;
   color: transparent;
 }
 .phone_number:hover{
@@ -138,16 +180,17 @@ header img{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
-  top: 0;
+  top: 5%;
   width: 90%; /* Full width */
   height: 90%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(154,205,50);
+  background-color: rgba(154,205,50,.96);
+  text-align: center;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: 5% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -187,3 +230,28 @@ figcaption{
   text-decoration: none;
   cursor: pointer;
 }
+
+.resume a{
+  color: white;
+}
+
+// * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+//  */
+/* 2D TRANSITIONS */
+/* Grow */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(10px) translateZ(0);
+  transform: perspective(10px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
