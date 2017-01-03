@@ -74,14 +74,13 @@ header img{
   font-size: 1.5rem;
   color: white;
 }
+.newsitem a{
+  color: #FF6347;
+}
 
 
 .projects{
-  background-image: url("../img/pnb.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #00FF7F;
   height: 12rem;
   display: flex;
   justify-content: center;
@@ -90,62 +89,30 @@ header img{
 }
 .projects:hover{
   cursor: pointer;
-  color: #F1F227;
+  color: #F22613;
 }
 
-
-#contact_wrapper{
-  padding-top: 40px;
-  width: 75%;
-  margin: auto;
-  text-align: center;
-}
-#contact_wrapper h1{
-  text-align: center;
-  color: white;
-}
-
-
-#icon_place{
-  display: flex;
-  justify-content: space-between;
-}
-#icons{
-  width: 80px;
-  height: 80px;
-}
-.phone_number{
-  background-image: url("../img/icon_phone.png");
-  background-size: 80px 80px;
-  color: transparent;
-}
-.phone_number:hover{
-  background-image: none;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.phone_number_text{
-  display: none;
-}
 
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 2; /* Sit on top */
-  top: 5%;
+  top: 10%;
+  left: 5%;
   width: 90%; /* Full width */
-  height: 90%; /* Full height */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgba(154,205,50,.96);
+  background-color: rgba(112,128,128, .95);
   text-align: center;
+}
+.modal h1{
+  font-size: 3rem;
 }
 
 /* Modal Content/Box */
 .modal-content {
-  margin: 5% auto; /* 15% from the top and centered */
+  margin: 3% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
@@ -185,6 +152,51 @@ figcaption{
   text-decoration: none;
   cursor: pointer;
 }
+
+#contact_wrapper{
+  background-image: url("../img/conifer.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 25px;
+  width: 100%;
+  height: 240px;
+  margin: auto;
+  text-align: center;
+}
+#contact_wrapper h1{
+  text-align: center;
+  color: white;
+}
+
+
+#icon_place{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+}
+#icons{
+  width: 80px;
+  height: 80px;
+}
+.phone_number{
+  background-image: url("../img/icon_phone.png");
+  background-size: 80px 80px;
+  color: transparent;
+}
+.phone_number:hover{
+  background-image: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.phone_number_text{
+  display: none;
+}
+
 
 .resume a{
   color: white;
