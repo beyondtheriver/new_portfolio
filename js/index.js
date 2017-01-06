@@ -14,7 +14,8 @@ function textWidener(){
     $(this).animate(
       {
         'letter-spacing': '50px',
-        'font-size': '3rem'
+        'font-size': '3rem',
+        'background-color': 'rgba(0,255,127,.5)'
       }, 1000);
   }, function(){
     $(this).animate(
