@@ -1,0 +1,39 @@
+.logo_wrapper{
+  width: 100;
+  color: rgba(0,0,181,1.0);
+  text-shadow: 0.1rem 0.1rem rgba(255,255,255,1.0);
+  margin: auto;
+}
+.b{
+  position: fixed;
+  top: -13%;
+  left: 12%;
+  font-size: 30rem;
+}
+.eyon{
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12rem;
+}
+.d{
+  position: fixed;
+  top: -13%;
+  right: 12%;
+  font-size: 30rem;
+}
+.the{
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 5rem;
+}
+.river{
+  position: fixed;
+  top: 39%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 9rem;
+}
