@@ -5,10 +5,23 @@ $(document).ready(function(){
   storyReveal();
   //animates project text
   textWidener();
+  //opens Projects modal
   openProjects();
+  //closes Projects modal
   closeProjects();
 });
 
+
+function scroller(){
+  $(window).scroll(function() {
+    // int value of distance from top of window
+    var j = $(window).scrollTop();
+    // parallax: moves the logo up faster than a natural scroll
+    $("header img").css('transform', 'translateY(' + (-j*1.1) + 'px)');
+    $("#created_by").css('opacity', j/375);
+    console.log(j);
+  });
+};
 
 function storyReveal(){
   var opacity_level = $("#created_by").css('opacity');
@@ -21,17 +34,6 @@ function storyReveal(){
     if(opacity_level > 0 && opacity_level < 100){
       $(this).animate({'opacity': 100}, 1000);
     }
-  });
-};
-
-function scroller(){
-  $(window).scroll(function() {
-    // int value of distance from top of window
-    var j = $(window).scrollTop();
-    // parallax: moves the logo up faster than a natural scroll
-    $("header img").css('transform', 'translateY(' + (-j*1.1) + 'px)');
-    $("#created_by").css('opacity', j/375);
-    console.log(j);
   });
 };
 
@@ -52,37 +54,16 @@ function textWidener(){
   })
 };
 
-function openBox(){
-  var newsDisplay = $(".hidden_news").css('display');
-  // if (newsDisplay == 'none'){
-    $("#news").click(function(){
-      $(this).removeClass("news").addClass("news_open");
-      //previously hidden news now displayed
-      $(".hidden_news").show();
-      //close button appears
-      $(".close").show();
-    });
-  // };
-};
-
-function closeBox(){
-    $(".close").click(function(){
-      $("#news").removeClass("news_open").addClass("news");
-      //hidden news again hidden
-      $(".hidden_news").hide();
-      //close button disappears
-      $(".close").hide();
-    });
-};
-
 function openProjects(){
   $(".projects").click(function(){
     $(".modal").show();
+    $(".close").show();
   });
 };
 
 function closeProjects(){
-  $(".modal").click(function(){
+  $(".close").click(function(){
     $(this).hide();
+    $(".modal").hide();
   })
 };
