@@ -37,3 +37,50 @@
   transform: translateX(-50%);
   font-size: 9rem;
 }
+/* ----------- iPhone 6+ ----------- */
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    .logo_wrapper{
+      width: 100;
+      color: rgba(0,0,181,1.0);
+      text-shadow: 0.1rem 0.1rem rgba(255,255,255,1.0);
+      margin: auto;
+    }
+    .b{
+      position: fixed;
+      top: 6%;
+      left: 3%;
+      font-size: 25rem;
+    }
+    .eyon{
+      position: fixed;
+      top: 12%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12rem;
+    }
+    .d{
+      position: fixed;
+      top: 6%;
+      right: 3%;
+      font-size: 25rem;
+    }
+    .the{
+      position: fixed;
+      top: 26%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 9rem;
+    }
+    .river{
+      position: fixed;
+      top: 35%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 15rem;
+    }
+}
